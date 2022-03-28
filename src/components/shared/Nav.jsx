@@ -1,8 +1,8 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const Nav = () => {
   return (
-    <nav class="bg-white border-gray-200  sm:px-24 py-2.5  dark:bg-gray-800">
+    <nav class="bg-white border-gray-200  sm:px-24 py-5  dark:bg-gray-800 absolute top-0 right-0 left-0">
       <div class="container flex flex-wrap justify-between items-center mx-auto">
         <button
           data-collapse-toggle="mobile-menu"
@@ -40,29 +40,29 @@ const Nav = () => {
         <div class="hidden w-full md:block md:w-auto" id="mobile-menu">
           <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
             <li>
-              <a
-                href="#"
+              <Link
+                to="/"
                 class="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
                 aria-current="page"
               >
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#"
+              <Link
+                to="/products"
                 class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
               >
                 Products
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#"
+              <Link
+                to="/login"
                 class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
               >
                 Login
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

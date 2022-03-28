@@ -1,12 +1,12 @@
 import React from "react";
-import Nav from "../components/Nav";
+import Nav from "../components/shared/Nav";
 import Content from "../components/shared/Content";
 
-const PageContainer = ({ children }) => {
+const PageContainer = ({ children, clasName }) => {
   return (
     <>
-      <Nav></Nav>
-      <Content>{children}</Content>
+      <Nav />
+      <Content className={clasName}>{children}</Content>
     </>
   );
 };
